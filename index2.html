@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora Gwyneth | Romance Author</title>
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF; /* Pure white background */
+            color: #000000; /* Black for body text */
+            text-align: center;
+            line-height: 1.6;
+        }
+        header {
+            position: relative;
+            height: 400px;
+            background: url('/images/couple.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        header .text-left {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            text-align: left;
+            background: rgba(255, 255, 255, 0.7); /* White overlay for readability */
+            padding: 10px;
+        }
+        header .text-right {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            text-align: right;
+            background: rgba(255, 255, 255, 0.7); /* White overlay for readability */
+            padding: 10px;
+        }
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3em;
+            color: #C0392B; /* Red for romantic flair */
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #000000; /* Black for contrast */
+            margin: 5px 0;
+        }
+        nav {
+            background-color: #F5F5F5; /* Light gray for subtle nav */
+            padding: 1em 0;
+        }
+        nav a {
+            color: #C0392B; /* Red for nav links */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #000000; /* Black on hover */
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #FFF0F0; /* Very light red tint */
+            border-radius: 10px;
+        }
+        h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #C0392B; /* Red for headings */
+        }
+        p {
+            font-size: 1.1em;
+            color: #000000; /* Black for body */
+        }
+        a.contact-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #C0392B; /* Red button */
+            color: #FFFFFF; /* White text on button */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a.contact-link:hover {
+            background-color: #000000; /* Black on hover */
+        }
+        @media (max-width: 600px) {
+            header .text-left, header .text-right { 
+                top: 10px; 
+                transform: none; 
+                width: 40%; 
+            }
+            header h1 { font-size: 2em; }
+            header p { font-size: 1em; }
+            nav a { margin: 0 10px; }
+            section { margin: 20px; padding: 10px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="text-left">
+            <h1>Nora Gwyneth | Romance Author</h1>
+        </div>
+        <div class="text-right">
+            <p>Crafting Heartfelt Love Stories with Cozy Charm</p>
+        </div>
+    </header>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Nora Gwyneth</h2>
+        <p>Nora Gwyneth crafts swoon-worthy romance novels that linger in the heart. Her debut cozy romance, set in a charming Welsh village, is coming soon.</p>
+    </section>
+    <section id="books">
+        <h2>Books</h2>
+        <p>Debut Novel Coming Soon: A cozy enemies-to-lovers tale filled with small-town charm and heartfelt moments.</p>
+    </section>
+    <a href="/contact.html" class="contact-link">Get in Touch</a>
+</body>
+</html>
