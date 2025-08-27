@@ -20,33 +20,31 @@
             background: url('/images/couple.jpg') no-repeat center center;
             background-size: cover;
         }
-        header .text-left {
+        header .text-container {
             position: absolute;
             top: 50%;
             left: 20px;
-            transform: translateY(-50%);
-            text-align: center;
-            width: 40%;
-        }
-        header .text-right {
-            position: absolute;
-            top: 50%;
             right: 20px;
             transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+        }
+        header .text-container .text-left,
+        header .text-container .text-right {
+            width: 45%;
             text-align: center;
-            width: 40%;
         }
         header h1 {
             font-family: 'Great Vibes', cursive;
             font-size: 3em;
             color: #000000; /* Black text */
-            margin: 0;
+            margin: 0 0 10px 0; /* Space below title */
         }
         header p {
             font-family: 'Dancing Script', cursive;
             font-size: 1.5em;
             color: #000000; /* Black text */
-            margin: 5px 0;
+            margin: 0;
         }
         nav {
             background-color: #F5F5F5; /* Light gray for subtle nav */
@@ -93,12 +91,17 @@
             color: #FFFFFF; /* White text on hover */
         }
         @media (max-width: 600px) {
-            header .text-left, header .text-right { 
-                top: 10px; 
-                transform: none; 
-                width: 90%; 
-                left: 5%; 
-                right: 5%; 
+            header .text-container {
+                left: 5%;
+                right: 5%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            header .text-container .text-left,
+            header .text-container .text-right {
+                width: 100%;
+                margin-bottom: 10px;
             }
             header h1 { font-size: 2em; }
             header p { font-size: 1.2em; }
@@ -110,11 +113,13 @@
 </head>
 <body>
     <header>
-        <div class="text-left">
-            <h1>Nora Gwyneth Romance Author</h1>
-        </div>
-        <div class="text-right">
-            <p>Crafting Heartfelt Love Stories with Cozy Charm</p>
+        <div class="text-container">
+            <div class="text-left">
+                <h1>Nora Gwyneth Romance Author</h1>
+            </div>
+            <div class="text-right">
+                <p>Crafting Heartfelt Love Stories with Cozy Charm</p>
+            </div>
         </div>
     </header>
     <nav>
