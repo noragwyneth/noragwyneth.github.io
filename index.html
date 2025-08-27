@@ -24,20 +24,18 @@
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: flex-start; /* Align left on desktop */
-        }
-        header .text-container .text-left {
             width: 45%;
-            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         header h1 {
             font-family: 'Great Vibes', cursive;
             font-size: 3em;
             color: #000000; /* Black text */
-            margin: 0 0 10px 0; /* Space below title */
+            margin: 0 0 20px 0; /* Space below title */
         }
         header p {
             font-family: 'Dancing Script', cursive;
@@ -93,24 +91,26 @@
             header .text-container {
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
                 height: 100%;
-            }
-            header .text-container .text-left {
-                position: absolute;
-                top: 20px;
+                top: 0;
+                left: 0;
+                right: 0;
                 width: 100%;
             }
-            header .text-container .text-right {
-                display: none; /* Hide right text on mobile */
+            header h1 {
+                margin-bottom: 30px; /* Increased space to prevent overlap */
+            }
+            header p {
+                margin-top: 10px; /* Space above subtitle */
+            }
+            header h1, header p {
+                position: relative;
+                width: 90%;
+                max-width: 300px;
             }
             header h1 { font-size: 2em; }
-            header p { 
-                font-size: 1.8em; /* Larger font size */
-                position: absolute;
-                bottom: 20px;
-                width: 100%;
-            }
+            header p { font-size: 1.8em; }
             nav a { margin: 0 10px; }
             section { margin: 20px; padding: 10px; }
         }
@@ -122,9 +122,6 @@
         <div class="text-container">
             <div class="text-left">
                 <h1>Nora Gwyneth Romance Author</h1>
-                <p>Crafting Heartfelt Love Stories</p>
-            </div>
-            <div class="text-right">
                 <p>Crafting Heartfelt Love Stories</p>
             </div>
         </div>
