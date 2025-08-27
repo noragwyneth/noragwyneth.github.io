@@ -29,7 +29,10 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+        }
+        header .text-container .text-left {
+            text-align: center;
         }
         header h1 {
             font-family: 'Great Vibes', cursive;
@@ -89,26 +92,34 @@
         }
         @media (max-width: 600px) {
             header .text-container {
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start; /* Align to top */
-                top: 10px; /* Position near top */
+                position: absolute;
+                top: 0;
                 left: 0;
                 right: 0;
                 width: 100%;
-                padding: 10px 0;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px;
+            }
+            header .text-container .text-left {
+                width: 90%;
+                max-width: 350px; /* Wider field to fit one line */
+                background-color: #FFFFFD; /* Subtle off-white background */
+                padding: 5px 10px;
+                margin: 10px auto 0; /* Top margin to position above heads */
             }
             header h1 {
-                font-size: 1.5em; /* Reduced to prevent line break */
-                margin-bottom: 10px; /* Space between title and subtitle */
-            }
-            header p {
-                font-size: 1.3em; /* Reduced to prevent line break */
+                font-size: 1.3em; /* Reduced to fit one line */
                 margin: 0;
             }
-            header h1, header p {
-                width: 80%;
-                max-width: 250px; /* Limit width to reduce wrapping */
+            header p {
+                width: 90%;
+                max-width: 350px; /* Wider field to fit one line */
+                background-color: #FFFFFD; /* Subtle off-white background */
+                padding: 5px 10px;
+                font-size: 1.3em; /* Reduced to fit one line */
+                margin: 0 auto 10px; /* Bottom margin to position at feet */
             }
             nav a { margin: 0 10px; }
             section { margin: 20px; padding: 10px; }
