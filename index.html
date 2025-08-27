@@ -91,26 +91,25 @@
             header .text-container {
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                height: 100%;
-                top: 0;
+                justify-content: flex-start; /* Align to top */
+                top: 10px; /* Position near top */
                 left: 0;
                 right: 0;
                 width: 100%;
+                padding: 10px 0;
             }
             header h1 {
-                margin-bottom: 30px; /* Increased space to prevent overlap */
+                font-size: 1.5em; /* Reduced to prevent line break */
+                margin-bottom: 10px; /* Space between title and subtitle */
             }
             header p {
-                margin-top: 10px; /* Space above subtitle */
+                font-size: 1.3em; /* Reduced to prevent line break */
+                margin: 0;
             }
             header h1, header p {
-                position: relative;
-                width: 90%;
-                max-width: 300px;
+                width: 80%;
+                max-width: 250px; /* Limit width to reduce wrapping */
             }
-            header h1 { font-size: 2em; }
-            header p { font-size: 1.8em; }
             nav a { margin: 0 10px; }
             section { margin: 20px; padding: 10px; }
         }
