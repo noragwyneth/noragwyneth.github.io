@@ -97,7 +97,7 @@
             }
             header .text-container {
                 position: absolute;
-                top: -7px; /* Keeps title visible, prevents cutoff */
+                top: 0px; /* Moved down 7px from -7px to prevent title cutoff */
                 left: 0;
                 right: 0;
                 width: 100%;
@@ -115,7 +115,7 @@
                 font-family: 'Great Vibes', cursive;
                 font-size: 1.8em; /* Slightly smaller for better fit */
                 letter-spacing: 0;
-                margin: 5px 0 0 0; /* Zero bottom margin to remove gap */
+                margin: 5px 0 0 0; /* Zero bottom margin to keep spacing */
                 line-height: 1; /* Tighten line height to prevent overlap */
             }
             header p {
