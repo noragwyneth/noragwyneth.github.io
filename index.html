@@ -29,9 +29,10 @@
             display: flex;
             justify-content: space-between; /* Revert to original spacing */
         }
-        header .text-container .text-left
+        header .text-container .text-left {
             width: 45%;
             text-align: center;
+            margin-left: 7px; /* Shift text 7px right for desktop */
         }
         header h1 {
             font-family: 'Great Vibes', cursive;
@@ -96,7 +97,7 @@
             }
             header .text-container {
                 position: absolute;
-                top: -10px; /* Pulls text up higher to avoid heads */
+                top: -7px; /* Adjusted down 3px from -10px to prevent title cutoff */
                 left: 0;
                 right: 0;
                 width: 100%;
@@ -114,7 +115,7 @@
                 font-family: 'Great Vibes', cursive;
                 font-size: 1.8em; /* Slightly smaller for better fit */
                 letter-spacing: 0;
-                margin: 5px 0; /* Tighter spacing */
+                margin: 5px 0 1px 0; /* Reduced to 1px gap below for tighter spacing */
             }
             header p {
                 width: 90%;
