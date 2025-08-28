@@ -17,7 +17,7 @@
         header {
             position: relative;
             height: 400px;
-            background: url('/images/couple.jpg') no-repeat center center;
+            background: url('/images/couple.jpg') no-repeat center center; /* Center the couple */
             background-size: cover;
         }
         header .text-container {
@@ -92,32 +92,32 @@
         @media (max-width: 600px) {
             header .text-container {
                 position: absolute;
-                top: 0;
+                top: 5px; /* 5px spacing from top */
                 left: 0;
                 right: 0;
                 width: 100%;
                 height: 100%;
                 flex-direction: column;
                 justify-content: space-between;
-                padding: 10px;
+                padding: 0; /* Remove padding to adjust positioning */
             }
             header .text-container .text-left {
                 width: 90%;
                 max-width: 350px; /* Wider field to fit one line */
-                margin: 10px auto 0; /* Top margin to position above heads */
+                margin: 0 auto 0; /* Top alignment */
             }
             header h1 {
                 font-family: 'Great Vibes', cursive;
-                font-size: 1.5em; /* Reduced to fit one line */
-                letter-spacing: 0.15em; /* Wider spacing */
+                font-size: 1.7em; /* Increased to fit one line */
+                letter-spacing: 0; /* Normal spacing */
                 margin: 0;
             }
             header p {
                 width: 90%;
                 max-width: 350px; /* Wider field to fit one line */
-                font-size: 1.3em; /* Reduced to fit one line */
-                letter-spacing: 0.1em; /* Slightly less wide than title */
-                margin: 0 auto 10px; /* Bottom margin to position at feet */
+                font-size: 1.3em; /* Kept the same size */
+                letter-spacing: 0.1em; /* Kept wider than title */
+                margin: 5px auto 10px; /* Moved up closer without overlapping */
             }
             nav a { margin: 0 10px; }
             section { margin: 20px; padding: 10px; }
