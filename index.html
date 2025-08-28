@@ -97,7 +97,7 @@
             }
             header .text-container {
                 position: absolute;
-                top: -7px; /* Adjusted down 3px from -10px to prevent title cutoff */
+                top: -7px; /* Keeps title visible, prevents cutoff */
                 left: 0;
                 right: 0;
                 width: 100%;
@@ -115,14 +115,16 @@
                 font-family: 'Great Vibes', cursive;
                 font-size: 1.8em; /* Slightly smaller for better fit */
                 letter-spacing: 0;
-                margin: 5px 0 1px 0; /* Reduced to 1px gap below for tighter spacing */
+                margin: 5px 0 0 0; /* Zero bottom margin to remove gap */
+                line-height: 1; /* Tighten line height to prevent overlap */
             }
             header p {
                 width: 90%;
                 max-width: 350px;
                 font-size: 1.1em; /* Smaller to prevent wrapping */
                 letter-spacing: 0.05em;
-                margin: 0 auto 5px; /* Tighter spacing */
+                margin: 0 auto 5px; /* Zero top margin, keep bottom for layout */
+                line-height: 1; /* Tighten line height to prevent overlap */
             }
             nav a { margin: 0 10px; }
             section { margin: 20px; padding: 10px; }
